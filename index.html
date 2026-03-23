@@ -1,1 +1,87 @@
-hello world!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px;
+      background: #1e293b;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    p {
+      color: #94a3b8;
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #3b82f6;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>Hosted on Cloudflare Pages 🚀</p>
+  </header>
+
+  <div class="container">
+    
+    <div class="card">
+      <h2>About Me</h2>
+      <p>This is my first webpage. Pretty cool, right?</p>
+    </div>
+
+    <div class="card">
+      <h2>Click Button</h2>
+      <button onclick="sayHello()">Click Me</button>
+    </div>
+
+  </div>
+
+  <script>
+    function sayHello() {
+      alert("Hello! Your site is working 🎉");
+    }
+  </script>
+
+</body>
+</html>
